@@ -12,7 +12,7 @@ function Patientsearch({allPatients}) {
             {allPatients.map((patient,index)=>{
                 return (<div key={index} className='flex w-full justify-between h-14 px-5 items-center'>
                    <div className='flex items-center justify-center gap-4'>
-                    <img className='h-2/3' src={patient.profile_picture}></img>
+                    <img className='h-12' src={patient.profile_picture}></img>
                     <div>
                         <div>{patient.name}</div>
                         <div className='text-[#707070]'>{patient.gender} , {patient.age}</div>
